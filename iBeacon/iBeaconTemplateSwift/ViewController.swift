@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  iBeaconTemplateSwift
+//  RayGun
 //
 //  Created by Andy Shi on 10/18/14.
 //  Copyright (c) 2014 Andy Shi. All rights reserved.

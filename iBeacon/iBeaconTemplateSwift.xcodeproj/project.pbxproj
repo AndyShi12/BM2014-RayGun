@@ -11,7 +11,7 @@
 		448D893E19632D6E006ADF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D893D19632D6E006ADF78 /* ViewController.swift */; };
 		448D894119632D6E006ADF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448D893F19632D6E006ADF78 /* Main.storyboard */; };
 		448D894319632D6E006ADF78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448D894219632D6E006ADF78 /* Images.xcassets */; };
-		448D894F19632D6F006ADF78 /* iBeaconTemplateSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D894E19632D6F006ADF78 /* iBeaconTemplateSwiftTests.swift */; };
+		448D894F19632D6F006ADF78 /* iBeaconTemplateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D894E19632D6F006ADF78 /* iBeaconTemplateTest.swift */; };
 		448D895919632E3B006ADF78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448D895819632E3B006ADF78 /* CoreLocation.framework */; };
 		CE1BDD9119BD376F00AFB1ED /* tos_beep.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1BDD9019BD376F00AFB1ED /* tos_beep.caf */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		448D894219632D6E006ADF78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		448D894819632D6F006ADF78 /* iBeaconTemplateSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconTemplateSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448D894D19632D6F006ADF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448D894E19632D6F006ADF78 /* iBeaconTemplateSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconTemplateSwiftTests.swift; sourceTree = "<group>"; };
+		448D894E19632D6F006ADF78 /* iBeaconTemplateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconTemplateTest.swift; sourceTree = "<group>"; };
 		448D895819632E3B006ADF78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE1BDD9019BD376F00AFB1ED /* tos_beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tos_beep.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,8 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				448D895819632E3B006ADF78 /* CoreLocation.framework */,
-				448D893819632D6E006ADF78 /* iBeaconTemplateSwift */,
-				448D894B19632D6F006ADF78 /* iBeaconTemplateSwiftTests */,
+				448D893819632D6E006ADF78 /* iBeaconFiles */,
+				448D894B19632D6F006ADF78 /* iBeaconTest */,
 				448D893719632D6E006ADF78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +78,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		448D893819632D6E006ADF78 /* iBeaconTemplateSwift */ = {
+		448D893819632D6E006ADF78 /* iBeaconFiles */ = {
 			isa = PBXGroup;
 			children = (
 				448D893B19632D6E006ADF78 /* AppDelegate.swift */,
@@ -87,6 +87,7 @@
 				448D894219632D6E006ADF78 /* Images.xcassets */,
 				448D893919632D6E006ADF78 /* Supporting Files */,
 			);
+			name = iBeaconFiles;
 			path = iBeaconTemplateSwift;
 			sourceTree = "<group>";
 		};
@@ -99,12 +100,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		448D894B19632D6F006ADF78 /* iBeaconTemplateSwiftTests */ = {
+		448D894B19632D6F006ADF78 /* iBeaconTest */ = {
 			isa = PBXGroup;
 			children = (
-				448D894E19632D6F006ADF78 /* iBeaconTemplateSwiftTests.swift */,
+				448D894E19632D6F006ADF78 /* iBeaconTemplateTest.swift */,
 				448D894C19632D6F006ADF78 /* Supporting Files */,
 			);
+			name = iBeaconTest;
 			path = iBeaconTemplateSwiftTests;
 			sourceTree = "<group>";
 		};
@@ -230,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448D894F19632D6F006ADF78 /* iBeaconTemplateSwiftTests.swift in Sources */,
+				448D894F19632D6F006ADF78 /* iBeaconTemplateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +343,7 @@
 				INFOPLIST_FILE = iBeaconTemplateSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iBeaconTemplateSwift;
 			};
 			name = Debug;
 		};
@@ -353,7 +355,7 @@
 				INFOPLIST_FILE = iBeaconTemplateSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iBeaconTemplateSwift;
 			};
 			name = Release;
 		};
@@ -372,7 +374,7 @@
 				INFOPLIST_FILE = iBeaconTemplateSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iBeaconTemplateSwiftTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -388,7 +390,7 @@
 				INFOPLIST_FILE = iBeaconTemplateSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iBeaconTemplateSwiftTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
