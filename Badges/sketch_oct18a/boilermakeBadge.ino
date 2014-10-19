@@ -466,4 +466,3 @@ void welcomeMessage(void) {
   Serial.print("\nAll commands must be terminated with a carriage return.\r\n"
       "Type 'help' for a list of available commands.\r\n\n> ");
 }
-
