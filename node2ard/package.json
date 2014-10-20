@@ -1,0 +1,10 @@
+{
+  "name": "node2ard-socket",
+  "version": "0.0.1",
+  "description": "controlling arduinos through websockets",
+  "dependencies": {
+    "express": "^4.9.8",
+    "serialport": "^1.4.6",
+    "socket.io": "^1.1.0"
+  }
+}
