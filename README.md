@@ -7,3 +7,5 @@ We combined iBeacon (proximity based positioning) with a QR analyzer (player det
 - Bonus, your Boilermake badge shows your life! 
 
 Players use the app to capture the other players’ QR codes to “kill” them. Dead players must return to an iBeacon “home base” to respawn and continue playing. An LED display on an Arduino shows whether the player is alive or dead.
+  
+https://www.youtube.com/watch?v=cXPJP8lNTwU
